@@ -26,6 +26,7 @@ if %errorlevel% neq 0 (
 )
 
 echo [3/3] Building production bundle...
+set CI=false
 call npm run build
 if %errorlevel% neq 0 (
     echo [ERROR] Build failed!

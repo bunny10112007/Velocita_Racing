@@ -32,6 +32,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "postinstall": "node -e \"const fs=require('fs');try{const p=require.resolve('react/package.json');const pkg=JSON.parse(fs.readFileSync(p));if(!pkg.exports){pkg.exports={'.':'./index.js','./jsx-runtime':'./jsx-runtime.js','./jsx-dev-runtime':'./jsx-dev-runtime.js','./package.json':'./package.json'};fs.writeFileSync(p,JSON.stringify(pkg,null,2));}}catch(e){}\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
