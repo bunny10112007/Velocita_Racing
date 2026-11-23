@@ -1,0 +1,307 @@
+#section-zero-events {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .event-banner {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .bottom-box {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 310px;
+        // background-color: #1a1a1a;
+        background-image: linear-gradient(to top, #1a1a1a, #1a1a1a00);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        .banner-event-details {
+          padding: 30px 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .data-details,
+          .data-location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .event-icon {
+            font-size: 2rem;
+            color: tomato;
+          }
+          .event-titles {
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px;
+            .banner-event-title {
+              font-size: .9rem;
+              color: rgb(187, 187, 187);
+            }
+            .banner-event-subtitle {
+              color: rgb(148, 148, 148);
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .main-container {
+      .event-banner {
+        width: 100%;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 400px;
+        }
+        .bottom-box {
+            .banner-event-details {
+                padding: 30px 30px;
+                flex-direction: column; 
+             
+      
+                .event-icon {
+                  font-size: 1.6rem;
+                  color: tomato;
+                }
+                .event-titles {
+          
+                  padding: 0 15px;
+                  .banner-event-title {
+                    font-size: .85rem;
+                    color: rgb(187, 187, 187);
+                  }
+                  .banner-event-subtitle {
+                    color: rgb(148, 148, 148);
+                    font-size: 0.75rem;
+                  }
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+#section-one-events {
+  .main-container {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 60px;
+    color: rgb(180, 180, 180);
+
+    .event-card {
+      height: 300px;
+      width: 250px;
+      margin: 10px;
+      // border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      background-color: #1a1a1a;
+      position: relative;
+      .card-top {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1a1a1a;
+    
+        img {
+          // height: 100%;
+          width: 100%;
+          // display: none;
+        }
+      }
+    
+      .card-bottom {
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        bottom: 0;
+        background-image: linear-gradient(to top, #2a2a2a, #1a1a1a00);
+    
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 30px 15px;
+    
+        .event-icon {
+          font-size: 2.4rem;
+          color: tomato;
+        }
+        .event-titles {
+          display: flex;
+          flex-direction: column;
+    
+          padding: 0 15px;
+          .banner-event-title {
+            font-size: 1rem;
+            color: rgb(187, 187, 187);
+          }
+          .banner-event-subtitle {
+            color: rgb(148, 148, 148);
+            font-size: 0.75rem;
+            line-height: 0.6rem;
+          }
+        }
+      }
+    
+      @media screen and (max-width:460px) {
+        // height: 250px;
+        width: 100%;
+      }
+    }
+    
+
+    .color-tabs{
+      .tab{
+        color: rgb(119, 119, 119);
+      }
+
+      .Mui-selected {
+        color: rgb(216, 216, 216);
+      }
+      
+    }
+
+    .tab-panel{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .box {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      color: rgb(180, 180, 180);
+      font-weight: 700;
+    }
+
+    .underline {
+      height: 0.15rem;
+      width: 60px;
+      background-color: tomato;
+      margin: 5px 0;
+    }
+
+    .underline-small {
+      height: 0.12rem;
+      width: 30px;
+      background-color: tomato;
+      margin: 5px 0;
+    }
+
+    .section-subtitle {
+      margin-top: 30px;
+    }
+
+    .paragraph-top {
+      margin-top: 10px;
+    }
+
+    .section-info {
+      margin-top: 15px;
+
+      // width: 80%;
+      text-align: justify;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6rem;
+      @media screen and (max-width: 420px) {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+      }
+
+      @media screen and (max-width: 390px) {
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+      }
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+        @media screen and (max-width: 420px) {
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+        }
+
+        @media screen and (max-width: 390px) {
+          font-size: 0.85rem;
+          line-height: 1.4rem;
+        }
+
+        @media screen and (max-width: 360px) {
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+        }
+
+        .arrow {
+          color: tomato;
+          margin-left: 10px;
+          font-size: 1.2rem;
+          @media screen and (max-width: 420px) {
+            font-size: 1.2rem;
+          }
+
+          @media screen and (max-width: 390px) {
+            font-size: 1.1rem;
+          }
+
+          @media screen and (max-width: 360px) {
+            font-size: 0.95rem;
+          }
+        }
+        a {
+          // text-decoration: none;
+          color: rgb(180, 180, 180);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #section-one-events {
+    .main-container {
+      padding: 175px 30px 60px 30px;
+
+      .tab-panel{
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+#sponsor-details-one {
+  .main-container {
+    padding: 200px 60px 120px 60px;
+    background-color: #1a1a1a;
+    color: #b4b4b4;
+
+    @media screen and (max-width: 450px) {
+      padding: 150px 30px 100px 30px;
+    }
+
+    .block {
+      padding-bottom: 20px;
+    }
+
+    .image-block {
+      // background-color: #b4b4b4;
+      // width: 400px;
+      .sponsor-image {
+        height: 200px;
+        border: 0.2rem solid #2a2a2a;
+        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+          0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+        padding: 15px;
+        background-color: rgb(221, 221, 221);
+
+        @media screen and (max-width: 450px) {
+          height: unset;
+          width: 75%;
+        }
+      }
+    }
+
+    .underline {
+      height: 0.15rem;
+      width: 60px;
+      background-color: tomato;
+      margin: 5px 0;
+    }
+
+    .underline-small {
+      height: 0.12rem;
+      width: 30px;
+      background-color: tomato;
+      margin: 5px 0;
+    }
+
+    .sponsor-title {
+    }
+
+    .sponsor-about {
+      margin: 15px 0 0 0;
+
+      line-height: 1.6rem;
+      //   font-weight: 700;
+      font-size: 0.95rem;
+
+      @media screen and (max-width: 420px) {
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+      }
+      @media screen and (max-width: 390px) {
+        font-size: 0.75rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 0.65rem;
+      }
+    }
+
+    .links {
+      .weblink {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+          margin-left: 15px;
+          color: #b4b4b4;
+        }
+
+        .arrow {
+          color: tomato;
+        }
+      }
+    }
+  }
+}
